@@ -1,0 +1,200 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+
+    <title>Khronos</title>
+  </head>
+  <body>
+    <nav>
+      <div class="top">Lets Start your day!</div>
+      <p class="welcome hidden">
+        Hello!<br />
+        welcome to time me!
+      </p>
+      <form class="login--form">
+        <input type="text" name="name" id="name" placeholder="User Name" />
+
+        <button class="login_button">Log in</button>
+      </form>
+      <form class="signin--form hidden">
+        <label>lets get you started!</label>
+        <input
+          type="text"
+          name="fullname"
+          id="fullname"
+          placeholder="Full Name"
+        />
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Preferable User Name"
+        />
+        <label
+          ><p style="font-size: small">
+            tell us the time you wake up(optional)
+          </p></label
+        >
+        <input
+          type="time"
+          name="waketime"
+          id="waketime"
+          placeholder=" wake up
+        Time"
+        />
+        <label
+          ><p style="font-size: small">
+            tell us the time you sleep(optional)
+          </p></label
+        >
+        <input
+          type="time"
+          name="sleeptime"
+          id="sleeptime"
+          placeholder=" Sleep
+        Time"
+        />
+
+        <p style="font-size: small">
+          note: going to sleep at the same time every night and waking up at the
+          same time every morning is good for your health
+        </p>
+        <button class="signin--submit">Submit</button>
+      </form>
+      <div class="bottom">
+        <button class="logout_button hidden">Log Out</button>
+        <button class="signin_button">Sign in</button>
+      </div>
+    </nav>
+    <div class="outer">
+      <div class="content main--section">
+        <div class="section--logo">KHRONOS</div>
+        <div class="startup hidden">
+          <p>Login to get started</p>
+          <br />
+          <p>OR</p>
+          <br />
+          <p>
+            New to Khronos?<br />
+            Sign in now to experience the most productive day of your life -
+            FOREVER!!!
+          </p>
+        </div>
+        <div class="status_bar">
+          <div class="heading--statusbar timeleft">
+            Time left on your day:12h
+          </div>
+        </div>
+        <div class="subcontent">
+          <div class="dayview">
+            <div class="heading--statusbar">This is your day!</div>
+            <div class="event now">
+              Now
+              <g class="event">time</g>
+            </div>
+            <g class="events"> </g>
+            <div class="new--event event">New Event +</div>
+          </div>
+          <div class="display">
+            <div class="details">
+              <ul class="lines">
+                <li class="event--name">Studing</li>
+                <li>Duration:</li>
+                <li>Desciption</li>
+              </ul>
+            </div>
+            <form class="newEvent--form hidden">
+              <h1>New Task</h1>
+              <input
+                type="text"
+                name="event-name"
+                id="event-name"
+                placeholder="Name of the task"
+              />
+              <span class="fixed span">
+                <label>Fixed</label>
+                <label class="switch">
+                  <input class="fixed--toggle" type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+                <g>
+                  Turn on fixed if the task should start and end on a specific
+                  time
+                </g>
+              </span>
+              <span class="duration dynamic">
+                <label>Duration</label>
+                <input
+                  type="number"
+                  name="event-duration"
+                  id="event-duration-hd"
+                  placeholder="hours"
+                />
+                <!--hour dynamic = hd  -->
+                <label>:</label>
+                <input
+                  type="number"
+                  name="event-duration"
+                  id="event-duration-md"
+                  placeholder="minutes"
+                />
+              </span>
+              <span class="duration eventfixed hidden">
+                <g>
+                  <label>Start time(24)</label>
+                  <g class="times">
+                    <input
+                      type="number"
+                      name="event-duration"
+                      id="event-duration-sh"
+                      placeholder="hours"
+                    />
+                    <label>:</label>
+                    <input
+                      type="number"
+                      name="event-duration"
+                      id="event-duration-sm"
+                      placeholder="minutes"
+                    />
+                  </g>
+                </g>
+                <g>
+                  <label>End time(24)</label>
+                  <g class="times">
+                    <input
+                      type="number"
+                      name="event-duration"
+                      id="event-duration-eh"
+                      placeholder="hours"
+                    />
+                    <label>:</label>
+                    <input
+                      type="number"
+                      name="event-duration"
+                      id="event-duration-em"
+                      placeholder="minutes"
+                    />
+                  </g>
+                </g>
+              </span>
+              <textarea
+                type="text-area"
+                name="event-description"
+                id="event-description"
+                cols="30"
+                rows="10"
+                placeholder="Duration of the task"
+              >
+Describe what you have to do , things to be done,or anything that you what to remeber!
+              </textarea>
+              <button class="newEvent_button">Create</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
